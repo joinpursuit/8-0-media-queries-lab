@@ -163,3 +163,48 @@ footer a:hover {
 }
 
 /* Media queries */
+/* 768-1279 */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+  main {
+    width: 90%;
+  }
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Less than 768px */
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  main {
+    grid-template-columns: 1fr;
+    gap: 50px 0;
+  }
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+  footer ul {
+    list-style: none;
+  }
+  footer h4 {
+    border-bottom: none;
+  }
+}
+
+/* 
+### 
+
+- [ ] Update the `header` element so that instead of two columns it is set to have one.
+- [ ] Update the `main` element so that instead of two columns it is set to have one.
+- [ ] Change the `gap` on the `main` element so that it has a gap between each row of `50px`. The gap between columns should be `0`.
+- [ ] Update the `footer` element so it has a padding of `25px` all around.
+- [ ] Update the `footer` element so that all of the text inside of it is aligned to the center.
+- [ ] Update the `footer` unordered list elements so that none of them have a list-style.
+- [ ] Update the `footer` heading so that it no longer has a border along the bottom.
+ */
