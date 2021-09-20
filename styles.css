@@ -91,7 +91,7 @@ nav a:hover {
 main {
   margin: 3rem auto;
 
-  width: 885.5px;
+  width: 70%;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -177,31 +177,26 @@ footer a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header {
     grid-template-columns: repeat(1, 1fr);
   }
-
   section.splash {
     display: none;
   }
 
   main {
-    width: 677.6875px;
-    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
   }
-
   footer {
     grid-template-columns: repeat(2, 1fr);
-    padding: 25px 25px 25px 25px;
+    padding: 25px;
     text-align: center;
   }
-
   footer h4 {
     border: none;
   }
-
   footer ul {
     list-style: none;
   }
