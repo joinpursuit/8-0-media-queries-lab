@@ -167,3 +167,40 @@ footer a:hover {
 p {
   color: #040f16;
 }
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+  main {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  .splash {
+    display: none;
+  }
+  main {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    text-align: center;
+  }
+  footer h4 {
+    border: none;
+  }
+  footer ul {
+    list-style: none;
+  }
+}
