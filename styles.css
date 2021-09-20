@@ -92,7 +92,6 @@ main {
   margin: 3rem auto;
 
   width: 70%;
-  /* width: 885.5px; */
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -186,5 +185,8 @@ footer a:hover {
   header {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .splash {
+    display: none;
   }
 }
