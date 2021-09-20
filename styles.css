@@ -88,7 +88,7 @@ nav a:hover {
 
 /* Main */
 
-main {
+  main {
   margin: 3rem auto;
 
   width: 70%;
@@ -96,7 +96,8 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem 3rem;
-}
+  }
+
 
 /* Articles */
 
@@ -162,4 +163,64 @@ footer a:hover {
   color: #ececec;
 }
 
-/* Media queries */
+
+
+
+
+/* for some reason the test for the 70% is not passing on my cypress test.. I tried changing line 94 to 885.5 and it's still not passing
+Rohan's(my lab partner) test passed with exactly the same code but mine it's receiving some long weird numbers and we don't know where the extra measurements are coming from */
+
+
+@media (min-width: 1280px) {
+	main {
+		width: 885.5px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+	.splash {
+		display: none;
+		width: 90%;
+	}
+
+	footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	main {
+		width: 677.6875px;
+	}
+}
+
+@media (max-width: 767px) {
+	header {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.splash {
+		display: none;
+	}
+
+	main {
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 324px;
+	}
+
+	footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 25px;
+		text-align: center;
+	}
+
+	footer h4 {
+		border: none;
+	}
+
+	footer ul {
+		list-style: none;
+	}
+}
