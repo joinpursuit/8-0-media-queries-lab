@@ -163,3 +163,74 @@ footer a:hover {
 }
 
 /* Media queries */
+/* 768px to 1279px */
+@media (min-width: 768px) and (max-width: 1279px) {
+  /*
+  Splash
+  Images from Unsplash: https://unsplash.com/
+  */
+
+  .splash {
+    display: none;
+  }
+
+  /* Main */
+
+  main {
+    width: 90%;
+  }
+
+  /* Footer */
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Less than 768px */
+@media (max-width: 767px) {
+    /*
+  Splash
+  Images from Unsplash: https://unsplash.com/
+  */
+
+  .splash {
+    display: none;
+  }
+
+  /* Header */
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* Main */
+
+  main {
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px 0;
+  }
+
+  /* Footer */
+
+  footer {
+    text-align: center;
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer h4 {
+    border-bottom: 0px solid #de6b48;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+}
