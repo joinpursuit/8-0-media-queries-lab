@@ -90,9 +90,7 @@ nav a:hover {
 
 main {
   margin: 3rem auto;
-
   width: 70%;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem 3rem;
@@ -163,3 +161,72 @@ footer a:hover {
 }
 
 /* Media queries */
+
+
+@media (max-width: 1280px) {
+  .splash{
+    display:block;
+  } 
+}  
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  main{
+    width:885.5px;
+  } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  main{
+    width: 677.6875px;
+  } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  footer{
+    grid-template-columns: repeat(2, 1fr);
+  } 
+}
+
+@media (max-width: 767px) {
+  header{
+    grid-template-columns: repeat(1, 1fr);
+  } 
+}
+
+@media (max-width: 767px) {
+  .splash{
+    display:none;
+  } 
+}
+
+@media (max-width: 767px) {
+  main{
+  width: 324px;
+  grid-template-columns: repeat(1, 1fr);
+  } 
+}
+
+@media (max-width: 767px) {
+  footer{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px;
+    text-align: center;
+  } 
+}
+
+@media (max-width: 767px) {
+  footer h4{
+    border-bottom: 0;
+  } 
+}
+
+@media (max-width: 767px) {
+  footer ul{
+    list-style: outside none none;
+  } 
+}
