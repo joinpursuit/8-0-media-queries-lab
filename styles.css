@@ -189,4 +189,7 @@ footer a:hover {
   .splash {
     display: none;
   }
+  main {
+    width: 324px;
+  }
 }
