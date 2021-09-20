@@ -12,6 +12,8 @@ body {
   padding: 0;
 }
 
+
+
 html {
   color: #040f16;
   font-family: Arial, Helvetica, sans-serif;
@@ -29,6 +31,7 @@ h6 {
 }
 
 /* Header */
+
 
 header {
   background: #040f16;
@@ -77,6 +80,9 @@ nav a:hover {
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
 }
+
+
+
 
 .splash h2 {
   color: #ececec;
@@ -163,3 +169,45 @@ footer a:hover {
 }
 
 /* Media queries */
+
+
+@media (max-width: 767px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  main {
+    gap: 50px 0px;
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer ul {
+    list-style: none;
+  }
+  footer h4 {
+    border-bottom: 0px;
+  }
+  .splash {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+  main {
+    width: 90%;
+  }
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
