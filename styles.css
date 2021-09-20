@@ -92,7 +92,7 @@ main {
   margin: 3rem auto;
 
   width: 70%;
-  width: 885.5px;
+  /* width: 885.5px; */
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -171,7 +171,7 @@ footer a:hover {
   }
   main {
     width: 90%;
-    width: 677.6875px;
+    /* width: 677.6875px; */
   }
   footer {
     grid-template-columns: repeat(2, 1fr);
@@ -190,7 +190,7 @@ footer a:hover {
     gap: 50px 0px;
     /* for some reason the percentage width is not aligned with the test cases */
     width: 90%;
-    width: 324px;
+    /* width: 324px; */
   }
   footer {
     padding: 25px;
