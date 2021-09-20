@@ -190,15 +190,6 @@ footer a:hover {
 
 /* Less than 768px */
 @media (max-width: 767px) {
-    /*
-  Splash
-  Images from Unsplash: https://unsplash.com/
-  */
-
-  .splash {
-    display: none;
-  }
-
   /* Header */
 
   header {
@@ -209,8 +200,6 @@ footer a:hover {
   /* Main */
 
   main {
-    width: 90%;
-
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px 0;
@@ -221,9 +210,6 @@ footer a:hover {
   footer {
     text-align: center;
     padding: 25px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 
   footer h4 {
