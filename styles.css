@@ -78,6 +78,7 @@ nav a:hover {
   border-bottom: 5px solid #de6b48;
 }
 
+
 .splash h2 {
   color: #ececec;
   font-size: 5rem;
@@ -90,9 +91,9 @@ nav a:hover {
 
 main {
   margin: 3rem auto;
-
+  
   width: 70%;
-
+  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem 3rem;
@@ -131,7 +132,7 @@ footer {
   background: #040f16;
   color: #ececec;
   padding: 50px 15% 25px;
-
+  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -163,3 +164,48 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  section.splash {
+    display: none;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+    section.splash {
+    display: none;
+  }
+  
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    gap: 50px 0;
+    width: 90%;
+  }
+
+  footer {
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  footer h4 {
+    border-bottom: none;
+  }
+}
