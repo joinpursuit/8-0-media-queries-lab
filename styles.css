@@ -163,3 +163,89 @@ footer a:hover {
 }
 
 /* Media queries */
+@media (min-width: 1280px) {
+  header {
+    grid-template-columns: 2;
+  }
+
+  .splash {
+    display: block;
+  }
+
+  main {
+    grid-template-columns: 2;
+    width: 885.5px;
+  }
+
+  footer {
+    grid-template-columns: 3;
+    padding: 50px 101px 25px 101px;
+    text-align: start;
+  }
+
+  footer h4 {
+    border-bottom: 1px solid rgb(222, 107, 72);
+  }
+
+  footer ul {
+    list-style: outside none square;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  header {
+    grid-template-columns: 2;
+  }
+
+  .splash {
+    display: none;
+  }
+
+  main {
+    width: 677.6875px;
+    grid-template-columns: 2;
+  }
+
+  footer {
+    grid-template-columns: 2;
+    padding: 50px 101px 25px 101px;
+    text-align: start;
+  }
+
+  footer h4 {
+    border-bottom: 1px solid rgb(222, 107, 72);
+  }
+
+  footer ul {
+    list-style: outside none square;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  .splash {
+    display: none;
+  }
+
+  main {
+    width: 324px;
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    grid-template-columns: 2;
+    padding: 25px;
+    text-align: center;
+  }
+
+  footer h4 {
+    border-bottom: none;
+  }
+
+  footer ul {
+    list-style: outside none none;
+  }
+}
