@@ -182,3 +182,9 @@ footer a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 767px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
