@@ -36,7 +36,7 @@ To complete the tests in this lab, you will need to overwrite some styles depend
 
 ### 768px to 1279px
 
-- [ ] Hide the `.splash` section by changing the `display` property to `none`.
+- [ done ] Hide the `.splash` section by changing the `display` property to `none`.
 - [ ] Set the width of the `main` element to be `90%`.
 - [ ] Update the `footer` element so that instead of three columns it is set to have two.
 
