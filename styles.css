@@ -76,6 +76,8 @@ nav a:hover {
   background-position: 50% 50%;
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
+  /* display: none */
+  /* visibility: hidden; */
 }
 
 .splash h2 {
@@ -84,6 +86,8 @@ nav a:hover {
   margin: 0;
   padding: 20vh 0;
   text-align: center;
+  display: none;
+  /* visibility: hidden; */
 }
 
 /* Main */
@@ -163,3 +167,62 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media (min-width: 1280px) {
+  main {
+    width: 70%;
+    width: 885.5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+
+  main {
+    width: 90%;
+    width: 677.6875px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    width: 90%;
+    width: 324px;
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px;
+    text-align: center;
+  }
+
+  footer h4 {
+    border: none;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  .splash {
+    display: none;
+  }
+}
