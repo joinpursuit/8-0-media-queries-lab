@@ -20,7 +20,7 @@ describe("Styling", () => {
     });
 
     it("should have the `main` element set to be 70% width", () => {
-      cy.get("main").should("have.css", "width", "885.5px");
+      cy.get("main").should("have.css", "width", "896px");
     });
 
     it("should have the `main` element be a grid element with two columns", () => {
