@@ -41,6 +41,13 @@ header {
   grid-template-columns: 250px 1fr;
 }
 
+/* remember NOT inclusive */
+@media (max-width: 767px) {
+  header {
+grid-template-columns: 100%;
+  }
+}
+
 header h1 {
   margin: 15px 0;
 }
@@ -78,12 +85,6 @@ nav a:hover {
   border-bottom: 5px solid #de6b48;
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
-  .splash {
-    display: none;
-  }
-}
-
 
 
 .splash h2 {
@@ -103,10 +104,12 @@ main {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 3rem;
+  /* change column gab */
+  gap: 50px
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
+/* not inclusive */
+@media (min-width: 768px) and (max-width: 1280px) {
 main {
   width: 90%;
 }
@@ -144,14 +147,22 @@ aside a:hover {
 footer {
   background: #040f16;
   color: #ececec;
-  padding: 50px 15% 25px;
-
+  /* updating footer */
+  padding: 25px;
+text-align:  center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
+@media (min-width: 768px) and (max-width: 1279px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
+
 footer h4 {
-  border-bottom: 1px solid #de6b48;
+  /* remove the border bottom */
+  border-bottom: 0;
   margin: 0;
   max-width: 250px;
   padding-bottom: 5px;
@@ -159,7 +170,8 @@ footer h4 {
 
 footer ul {
   color: #de6b48;
-  list-style: square;
+  /* removing list style */
+  list-style: none;
   padding-left: 1rem;
 }
 
@@ -177,3 +189,40 @@ footer a:hover {
 }
 
 /* Media queries */
+
+
+/* 768 - 1280 */
+
+@media (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+  main {
+    width: 90%;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr;   
+  }
+}
+
+
+
+
+/* LESS THAN 768 */
+
+@media (max-width: 767px) {
+
+header {
+  grid-template-columns: 100%;
+}
+footer {
+  padding: 25px;
+  text-align: center;
+}
+footer ul {
+  list-style-type: none;
+}
+footer h4 {
+  border-bottom: 0;
+}
+}

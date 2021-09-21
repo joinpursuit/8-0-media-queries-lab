@@ -36,16 +36,16 @@ To complete the tests in this lab, you will need to overwrite some styles depend
 
 ### 768px to 1279px
 
-- [ done ] Hide the `.splash` section by changing the `display` property to `none`.
-- [ ] Set the width of the `main` element to be `90%`.
-- [ ] Update the `footer` element so that instead of three columns it is set to have two.
+- [✅ ] Hide the `.splash` section by changing the `display` property to `none`.
+- [ ✅ ] Set the width of the `main` element to be `90%`.
+- [ ✅] Update the `footer` element so that instead of three columns it is set to have two.
 
 ### Less than 768px
 
 - [ ] Update the `header` element so that instead of two columns it is set to have one.
 - [ ] Update the `main` element so that instead of two columns it is set to have one.
-- [ ] Change the `gap` on the `main` element so that it has a gap between each row of `50px`. The gap between columns should be `0`.
-- [ ] Update the `footer` element so it has a padding of `25px` all around.
-- [ ] Update the `footer` element so that all of the text inside of it is aligned to the center.
-- [ ] Update the `footer` unordered list elements so that none of them have a list-style.
-- [ ] Update the `footer` heading so that it no longer has a border along the bottom.
+- [ ✅] Change the `gap` on the `main` element so that it has a gap between each row of `50px`. The gap between columns should be `0`.
+- [✅ ] Update the `footer` element so it has a padding of `25px` all around.
+- [ ✅] Update the `footer` element so that all of the text inside of it is aligned to the center.
+- [✅ ] Update the `footer` unordered list elements so that none of them have a list-style.
+- [✅ ] Update the `footer` heading so that it no longer has a border along the bottom.
