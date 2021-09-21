@@ -163,7 +163,7 @@ footer a:hover {
 
 @media (min-width: 1280px){
   main {
-      width: 885.5px;
+      width: 885px;
   }
 }
 
@@ -181,7 +181,7 @@ footer a:hover {
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 769px){
     header {
       display: grid;
       grid-template-columns: 1fr;
@@ -189,7 +189,7 @@ footer a:hover {
     main {
       display: grid;
       grid-template-columns: 1fr;
-      width: 324px;
+      width: 325px;
     }
     .splash {
       display: none;
