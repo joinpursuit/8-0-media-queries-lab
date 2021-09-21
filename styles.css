@@ -163,3 +163,47 @@ footer a:hover {
 }
 
 /* Media queries */
+@media (min-width: 1280px) {
+  main {
+    width: 885.5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:1279px ) {
+  .splash {
+    display: none;
+  }
+  main {
+    width: 677.6875px;
+  }
+  footer {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media (max-width:767px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  .splash {
+    display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
+    width: 324px;
+  }
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px;
+    text-align: center;
+  }
+  footer h4{
+    border: 0px;
+  } 
+  footer ul{
+    list-style: none;
+  }
+  /* .splash {
+    display: none;
+  }*/
+}
