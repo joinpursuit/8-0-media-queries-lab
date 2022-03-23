@@ -196,6 +196,6 @@ footer a:hover {
   }
 
   footer ul {
-    list-style: none;
+    list-style: outside none none;
   }
 }
