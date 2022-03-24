@@ -170,19 +170,13 @@ footer a:hover {
 	}
 	main {
 		width: 90%;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
 	}
 	footer {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
-	header {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	/* mobile devices; phones, very small tablets */
 	header {
 		display: grid;
