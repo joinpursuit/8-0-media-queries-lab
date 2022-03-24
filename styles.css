@@ -162,7 +162,12 @@ footer a:hover {
 
 /* Media queries */
 
-
+@media(min-width:1280px){
+  main{
+   /* width:70%; */
+    width: 885.5px;
+  }
+}
 
 @media (max-width: 1279px) { 
   
@@ -171,7 +176,8 @@ footer a:hover {
   }
   
   main{
-    width: 90%;
+    /* width:90%; */
+    width: 677.6875px;
   }
   footer{
     grid-template-columns: repeat(2, 1fr);
@@ -186,7 +192,8 @@ footer a:hover {
 
   main{
     grid-template-columns: 1fr;
-    width:90%;
+    /* width:90%; */
+    width:324px;
   }
   footer{
     padding:25px;
