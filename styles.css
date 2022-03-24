@@ -76,6 +76,7 @@ nav a:hover {
   background-position: 50% 50%;
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
+  display: none;
 }
 
 .splash h2 {
@@ -91,10 +92,10 @@ nav a:hover {
 main {
   margin: 3rem auto;
 
-  width: 70%;
+  width: 90%;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem 3rem;
 }
 
@@ -133,7 +134,7 @@ footer {
   padding: 50px 15% 25px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 footer h4 {
