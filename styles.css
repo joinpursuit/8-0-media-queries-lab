@@ -131,7 +131,7 @@ footer a:hover {
 		display: none;
 	}
 	main {
-		width: 324px;
+		width: 324px; /* */
 		grid-template-columns: 1fr;
 		gap: 50px 0rem;
 	}
@@ -156,7 +156,7 @@ footer a:hover {
 		display: none;
 	}
 	main {
-		width: 677.6875px;
+		width: 677.6875px; /*  */
 	}
 	footer {
 		grid-template-columns: 2fr 2fr;
