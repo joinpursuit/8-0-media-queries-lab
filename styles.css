@@ -185,4 +185,14 @@ footer a:hover {
     grid-template-columns: 1fr;
     gap: 50px 0px 50px 0px;
   }
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+  footer ul {
+    list-style: none;
+  }
+  footer h4 {
+    padding-bottom: none;
+  }
 }
