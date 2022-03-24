@@ -172,14 +172,15 @@ footer a:hover {
     width: 90%;
   }
   footer {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   main {
     grid-template-columns: 1fr;
@@ -193,6 +194,6 @@ footer a:hover {
     list-style: none;
   }
   footer h4 {
-    padding-bottom: none;
+    border-bottom: none;
   }
 }
