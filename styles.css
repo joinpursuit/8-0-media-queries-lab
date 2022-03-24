@@ -172,6 +172,17 @@ footer a:hover {
     width: 90%;
   }
   footer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main {
+    grid-template-columns: 1fr;
+    gap: 50px 0px 50px 0px;
   }
 }
