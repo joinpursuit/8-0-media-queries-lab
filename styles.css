@@ -6,6 +6,22 @@
 
 /* General styles */
 
+@media (min-width: 768px ){
+  .splash{ display: none}
+  .main{width:90%}
+  .footer{grid-template-columns: 3,1fr;}
+}
+
+@media(max-width: 768px){
+  .header{grid grid-template-columns:1,1fr ;}
+  .main{grid-template-columns: 1,1fr;}
+  .main{gap: 50px;}
+  .footer{padding:25px}
+  .footer{text-align: center;}
+  .footer{list-style: none;}
+  .footer{border-bottom: none;}
+}
+
 html,
 body {
   margin: 0;
