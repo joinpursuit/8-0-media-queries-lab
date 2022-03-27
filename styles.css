@@ -70,48 +70,8 @@ nav a:hover {
   Splash
   Images from Unsplash: https://unsplash.com/
 */
-@media(min-width: 768px) and (max-width:1279px){
-  .splash{
-    display: none;
-  }
-  main{
-    width: 677.6875px;
-  }
-  footer{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  }
-}
-@media(max-width:767px){
-  header{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .splash{
-    display: none;
-  }
-  main{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 90%;
-  }
-  footer{
-    text-align: center;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  footer h4{
-    border: 0;
-    border-bottom: 0;
-  }
-  footer ul{
-    list-style: outside none none;
-  }
-}
+
+
 .splash {
   background-image: url("./images/ales-nesetril-unsplash.jpg");
   background-position: 50% 50%;
@@ -202,3 +162,42 @@ footer a:hover {
 }
 
 /* Media queries */
+@media (min-width: 768px) and (max-width: 1279px){
+  .splash{
+    display: none;
+  }
+  main{
+    width: 677.6875px;
+  }
+  footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 324px;
+    row-gap: 50px;
+    column-gap: 0;
+  }
+  .splash {
+    display: none;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+  }
+  footer ul {
+    list-style: outside none none;
+  }
+  footer h4 {
+    border-bottom: none;
+  }
+}
