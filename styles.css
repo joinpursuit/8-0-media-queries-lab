@@ -222,33 +222,43 @@ footer a:hover {
     border-bottom: none;
   } */
 /* } */ 
+
+/* Media Querey conditionals */
+/* If the screen size is a min width of 768px and max width of 1279px */
 @media (min-width: 768px) and (max-width: 1279px){
+  /* splash class with have no display grid */
   .splash {
     display: none;
+    /* the main section will have a will have width of 677.6875px */
   }
   main {
     width: 677.6875px;
+    /* the footer section will have a grid display and has 2 columns that take up half the screen  */
   }
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
-
+/* Media Query conditional if the screen size has a max width o 767px */
 @media (max-width: 767px){
+  /* the splash class will have no grid display  */
   .splash {
     display: none;
   }
+  /* the header section will have a grid display with 1 column taking up the whole page */
   header {
     display: grid;
     grid-template-columns: 1fr;
   }
+  /* the main section will have a grid display with a width of 324px one colums and a gap of white space 50px verically (row) and 0px horizontally (coulmn) */
   main {
     display: grid;
     width: 324px;
     grid-template-columns: 1fr;
     gap: 50px 0px;
   }
+  /* the footer section will have a grid display with 2 columns taking up half the page padding 25px all around and text aligned center */
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -257,9 +267,11 @@ footer a:hover {
     padding-right: 12.5px;
     padding-left: 12.5px; */
     text-align: center;
+    /* the footer unordered list will have no list style */
   }
   footer ul {
     list-style: none;
+    /* the footer h4 section will have no bottom border */
   }
   footer h4 {
     border-bottom: none;
