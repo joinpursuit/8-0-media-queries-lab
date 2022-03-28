@@ -92,7 +92,7 @@ nav a:hover {
 main {
   margin: 3rem auto;
 
-  width: 70%;
+  width: 885.5px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -164,7 +164,7 @@ footer a:hover {
 }
 
 /* Media queries */
-@media (max-width: 767px) {
+@media (max-width: 766px) {
   header {
     display: grid;
     grid-template-columns: 200px;
@@ -174,7 +174,7 @@ footer a:hover {
     grid-template-columns: 200px;
     row-gap: 50px;
     column-gap: 0px;
-    width: 324px;
+    width: 677.6875px;
   }
   footer {
     display: grid;
@@ -197,6 +197,6 @@ footer a:hover {
     width: 677.6875px;
   }
   footer {
-    column-count: 2;
+    grid-template-columns: 1fr 1fr;
   }
 }
