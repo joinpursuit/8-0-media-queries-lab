@@ -76,6 +76,8 @@ nav a:hover {
   background-position: 50% 50%;
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
+  visibility: visible;
+  display: none;
 }
 
 .splash h2 {
@@ -91,7 +93,7 @@ nav a:hover {
 main {
   margin: 3rem auto;
 
-  width: 70%;
+  width: 324px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -131,9 +133,9 @@ footer {
   background: #040f16;
   color: #ececec;
   padding: 50px 15% 25px;
-
+  text-align: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 footer h4 {
@@ -163,3 +165,7 @@ footer a:hover {
 }
 
 /* Media queries */
+@media screen {
+  (max-width: 780px)
+}
+  
