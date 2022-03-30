@@ -2,7 +2,7 @@
   Google Fonts
   https://fonts.google.com/specimen/Righteous
 */
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 /* General styles */
 
@@ -72,7 +72,7 @@ nav a:hover {
 */
 
 .splash {
-  background-image: url("./images/ales-nesetril-unsplash.jpg");
+  background-image: url('./images/ales-nesetril-unsplash.jpg');
   background-position: 50% 50%;
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
@@ -163,3 +163,39 @@ footer a:hover {
 }
 
 /* Media queries */
+@media (max-width: 1279px){
+  .splash {
+    display: none;
+  }
+
+  main {
+    width: 677.6875px;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    column-gap: 0px;
+    width: 324px;
+  }
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+  footer h4 {
+    border: none;
+  }
+  footer ul {
+    list-style: none;
+  }
+}
