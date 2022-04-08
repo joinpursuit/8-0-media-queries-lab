@@ -134,7 +134,7 @@ footer {
   padding: 50px 15% 25px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 footer h4 {
@@ -170,19 +170,21 @@ footer a:hover {
   }
   main {
     width: 70%;
-    grid-template-columns: repeat(2, 1 fr);
+    grid-template-columns: 3 fr;
   }
-  footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1 fr);
-  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
 
   main {
     width: 677.695px;
-    display: grid;
+    grid-template-columns: repeat(2, 1 fr);
+  }
+  .splash {
+    display: none;
+  }
+  footer {
     grid-template-columns: repeat(2, 1 fr);
   }
 }
@@ -200,5 +202,11 @@ footer a:hover {
   }
   footer ul {
     list-style: none;
+  }
+  .splash {
+display: none;
+  }
+  main {
+    grid-template-columns: 1 fr;
   }
 }
