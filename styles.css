@@ -163,20 +163,40 @@ footer a:hover {
 }
 
 /*! Media queries */
-@media(max-width: 1279px){
-  .splash{
+@media (max-width: 1279px) {
+  .splash {
     display: none;
   }
-  main{
+  main {
     width: 90%;
   }
-  footer{
+  footer {
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-padding: 25px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media(min-width: 768px){
-
+@media (max-width:767px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    column-gap: 0;
+  }
+  footer {
+    display: grid;
+    padding: 25px;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer h4 {
+    border: none;
+  }
+  
+  footer ul{
+    list-style: none;
+  }
 }
