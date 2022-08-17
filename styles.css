@@ -76,6 +76,7 @@ nav a:hover {
   background-position: 50% 50%;
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
+  display: none;
 }
 
 .splash h2 {
