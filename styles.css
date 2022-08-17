@@ -177,3 +177,24 @@ footer a:hover {
     grid-template-columns: 1px 1px;
   }
 }
+
+@media (max-width: 767px){
+  header {
+    display: grid;
+    grid-template-columns: 1px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1px;
+  }
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+  footer h4 {
+    border-bottom: 0;
+  }
+  footer ul {
+    list-style: none;
+  }
+}
