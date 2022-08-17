@@ -162,4 +162,21 @@ footer a:hover {
   color: #ececec;
 }
 
-/* Media queries */
+/*! Media queries */
+@media(max-width: 1279px){
+  .splash{
+    display: none;
+  }
+  main{
+    width: 90%;
+  }
+  footer{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+padding: 25px;
+  }
+}
+
+@media(min-width: 768px){
+
+}
