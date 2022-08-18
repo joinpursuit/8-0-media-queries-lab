@@ -36,7 +36,6 @@ header {
   color: #ececec;
   padding: 0.5rem 15%;
   text-align: center;
-
   display: grid;
   grid-template-columns: 250px 1fr;
 }
@@ -90,9 +89,7 @@ nav a:hover {
 
 main {
   margin: 3rem auto;
-
-  width: 70%;
-
+  width: 885.5px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem 3rem;
@@ -131,7 +128,6 @@ footer {
   background: #040f16;
   color: #ececec;
   padding: 50px 15% 25px;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -163,3 +159,77 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media(min-width: 1280px){
+  section.splash{
+    display: visible;
+  }
+  main{
+    width: 885.5px;
+  }
+
+  header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer{
+  grid-template-columns: repeat(3, 1fr);
+}
+  }
+
+@media(max-width:1279px){
+  section.splash {
+  display: none;
+  }
+  main{
+    width: 677.6875px;
+  }
+  footer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* It is best to keep the media queries at the bottom so that they don't get overwritten from other styles, since CSS reads top to bottom. */
+@media (max-width: 767px){
+  header{
+    grid-template-columns: 1fr;
+  }
+  .splash{
+    display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
+    gap: 50px 0px;
+    width: 324px;
+  }
+
+  footer{
+    list-style: square;
+    padding: 25px;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  footer ul{
+    list-style: none;
+  }
+
+  footer h4 {
+    margin: 0;
+    max-width: 250px;
+    padding-bottom: 5px;
+    border: none;
+  }
+
+}
+
+/* @media(min-width: 1125px) and (max-width: 2436px){
+  footer{
+    text-align: center;
+  }
+} */
+
+
