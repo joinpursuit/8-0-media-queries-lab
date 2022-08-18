@@ -163,3 +163,51 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media screen and (max-width: 767px){
+    
+header {
+  grid-template-columns: 1fr;
+}
+
+.splash {
+  display: none;
+ }
+  
+main {
+  width: 324px;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+ 
+footer h4 {
+  border-bottom: none;
+}
+
+footer ul {
+  list-style: none;
+} 
+ 
+footer {
+  text-align: center;
+  padding: 25px 25px 25px 25px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+main {
+  width: 677.6875px;
+}
+
+.splash {
+  display: none;
+}
+
+footer {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+}
