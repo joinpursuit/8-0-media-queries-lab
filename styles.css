@@ -91,7 +91,7 @@ nav a:hover {
 main {
   margin: 3rem auto;
 
-  width: 70%;
+  width: 885.5px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -186,4 +186,18 @@ footer a:hover {
     border: none ;
 
   }
-}
+  footer ul {
+list-style: none;
+  }
+  }
+  @media(max-width: 1279px) {
+    .splash {
+      display: none;
+    }
+    main {
+      width: 677.6875px;
+    }
+    footer{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
