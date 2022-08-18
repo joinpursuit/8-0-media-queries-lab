@@ -161,5 +161,75 @@ footer a {
 footer a:hover {
   color: #ececec;
 }
+/* ### 768px to 1279px
 
+
+
+### Less than 768px
+
+
+- [ ] Update the `footer` element so it has a padding of `25px` all around.
+- [ ] Update the `footer` element so that all of the text inside of it is aligned to the center.
+- [ ] Update the `footer` unordered list elements so that none of them have a list-style.
+- [ ] Update the `footer` heading so that it no longer has a border along the bottom. */
 /* Media queries */
+
+@media (min-width:1279px){
+.splash{
+  display: visible;
+}
+main{
+width: 70%;
+}
+footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 101px 25px ;
+}
+}
+
+@media (max-width: 768px){
+  .splash{
+    display: none;
+  }
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main{
+  display: grid;
+  grid-template-columns: 1 fr;
+  width: 677.6875px ;
+  row-gap: 50px;
+}
+footer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px 101px 25px;
+  text-align: start;
+}
+}
+
+@media (max-width: 767px){
+  header{
+    display: grid;
+    grid-template-columns: 1fr;
+  } 
+   main{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  footer{
+    padding: 25px;
+    text-align: center;
+  }
+  footer h4{
+    border: none;
+  }
+  footer ul {
+    list-style: none;
+  }
+
+}
+
