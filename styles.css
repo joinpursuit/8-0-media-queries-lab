@@ -78,6 +78,7 @@ nav a:hover {
   border-bottom: 5px solid #de6b48;
 }
 
+
 .splash h2 {
   color: #ececec;
   font-size: 5rem;
@@ -136,6 +137,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
 }
 
+
 footer h4 {
   border-bottom: 1px solid #de6b48;
   margin: 0;
@@ -163,3 +165,38 @@ footer a:hover {
 }
 
 /* Media queries */
+
+
+@media(max-width: 1279px){
+  main{
+    width: 677.6875px;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .splash{
+    display:none;
+  }
+}
+
+@media(max-width: 767px){
+  header {
+    grid-template-columns: 250px;
+  }
+  main {
+    width: 324px;
+    grid-template-columns: 250px;
+  }
+  footer {
+    padding: 25px;
+    text-align: center;
+
+  }
+  footer h4 {
+    border: none;
+  }
+  footer ul {
+    list-style: outside none none;
+  }
+}
