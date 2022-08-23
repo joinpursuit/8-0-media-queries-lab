@@ -76,6 +76,20 @@ nav a:hover {
   background-position: 50% 50%;
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
+  
+}
+@media (min-width:768px) and (max-width:1279px){
+.splash{
+  display:none;
+}
+main{
+  width:90%;
+}
+footer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
 }
 
 .splash h2 {
@@ -97,7 +111,34 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem 3rem;
 }
+@media (max-width:767px){
+  header{
+    grid-template-columns:1fr ;
+  }
+  main{
+    grid-template-columns: 1fr;
+    grid-row-gap:0px;
+    width:90%;
 
+  }
+  footer{
+    text-align: center;
+    padding:25px 25px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    
+  }
+  footer>li{
+    list-style: none;
+  }
+  footer>h4{
+    border-bottom: 0px;
+  }
+  .splash{
+    display:none;
+
+}
+}
 /* Articles */
 
 article {
