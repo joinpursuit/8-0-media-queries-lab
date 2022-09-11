@@ -1,10 +1,6 @@
-/*
-  Google Fonts
-  https://fonts.google.com/specimen/Righteous
-*/
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
-/* General styles */
+
 
 html,
 body {
@@ -28,7 +24,7 @@ h6 {
   letter-spacing: 2px;
 }
 
-/* Header */
+
 
 header {
   background: #040f16;
@@ -66,10 +62,7 @@ nav a:hover {
   color: #de6b48;
 }
 
-/*
-  Splash
-  Images from Unsplash: https://unsplash.com/
-*/
+
 
 .splash {
   background-image: url("./images/ales-nesetril-unsplash.jpg");
@@ -86,7 +79,7 @@ nav a:hover {
   text-align: center;
 }
 
-/* Main */
+
 
 main {
   margin: 3rem auto;
@@ -98,7 +91,7 @@ main {
   gap: 1rem 3rem;
 }
 
-/* Articles */
+
 
 article {
   line-height: 1.5rem;
@@ -125,7 +118,7 @@ aside a:hover {
   color: #de6b48;
 }
 
-/* Footer */
+
 
 footer {
   background: #040f16;
@@ -162,4 +155,43 @@ footer a:hover {
   color: #ececec;
 }
 
-/* Media queries */
+
+main {
+  width: 885.5px;
+}
+
+@media (max-width: 1279px){
+  .splash {
+    display: none;
+  }
+  main {
+    width: 90%;
+    width: 677.6875px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  header,
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main {
+    row-gap: 50px;
+    width: 324px;
+  }
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+  footer ul {
+    list-style: none;
+  }
+  footer h4 {
+    border: none;
+  }
+}
