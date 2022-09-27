@@ -163,3 +163,38 @@ footer a:hover {
 }
 
 /* Media queries */
+@media (max-width: 1280px) {
+  main{
+  width: 885.5px;
+}
+}
+
+@media (max-width: 768px ) {
+  .splash{
+    display: none;
+  }
+  main {
+    width: 677.6875px;
+  }
+  nav ul {
+    grid-template-columns: 1fr
+  }
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media(max-width: 200px ){
+  .main{
+  width: 366px
+}
+header {
+  grid-template-columns: 1fr
+ }
+}
+/* @media (max-width: 256px ) {
+ main {
+  width: 324px;
+  }
+ } */
