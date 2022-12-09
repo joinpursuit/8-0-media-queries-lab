@@ -90,7 +90,7 @@ nav a:hover {
 
 main {
   margin: 3rem auto;
-  width: 885.5px;
+  width: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem 3rem;
@@ -178,6 +178,7 @@ footer a:hover {
   .splash {
     display: none;
   }
+
   header, main {
     display: grid;
     grid-template-columns: 1fr;
