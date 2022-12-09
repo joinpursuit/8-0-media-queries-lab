@@ -163,7 +163,7 @@ footer a:hover {
 }
 
 /* Media queries */
-@media (max-width: 1279px){
+@media (min-width: 768px) and (max-width: 1279px){
   .splash{
     display: none;
   }
@@ -172,21 +172,30 @@ footer a:hover {
   }
 
   footer{
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 767px){
+  .splash{
+    display: none;
+  }
+
   header{
     grid-template-columns: 1fr;
   }
 
   main{
+    width: 90%;
+    display: grid;
     grid-template-columns: 1fr;
     gap: 50px 0px;
   }
 
   footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 25px;
     text-align: center;
   }
