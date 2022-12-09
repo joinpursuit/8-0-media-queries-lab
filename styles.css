@@ -4,6 +4,7 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
+
 /* General styles */
 
 html,
@@ -38,7 +39,7 @@ header {
   text-align: center;
 
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 250px 2fr;
 }
 
 header h1 {
@@ -71,6 +72,7 @@ nav a:hover {
   Images from Unsplash: https://unsplash.com/
 */
 
+
 .splash {
   background-image: url("./images/ales-nesetril-unsplash.jpg");
   background-position: 50% 50%;
@@ -87,11 +89,14 @@ nav a:hover {
 }
 
 /* Main */
+/* @media (min-width: 768px) and (max-width:1279px) {
+ 
+} */
 
 main {
   margin: 3rem auto;
 
-  width: 70%;
+  width: 885.5px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -127,13 +132,15 @@ aside a:hover {
 
 /* Footer */
 
+
+
 footer {
   background: #040f16;
   color: #ececec;
   padding: 50px 15% 25px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 footer h4 {
@@ -163,3 +170,63 @@ footer a:hover {
 }
 
 /* Media queries */
+
+/* 768px to 1279px--v */
+@media (max-width: 768px) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+
+  main {
+    width: 677.6875px;
+  }
+
+  footer {
+
+
+    grid-template-columns: repeat(2 1fr);
+
+  }
+}
+
+/* 1280px--v */
+@media (min-width: 1280px) {
+  .splash {
+    display: block;
+  }
+
+  main {
+    width: 885.5px;
+  }
+
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 767px--v */
+@media(max-width: 767px) {
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  footer h4 {
+    border: none;
+  }
+
+  main {
+    width: 324px;
+    grid-template-columns: 1fr;
+  }
+
+  footer ul {
+    list-style: outside none none;
+  }
+}
