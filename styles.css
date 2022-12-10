@@ -30,6 +30,7 @@ h6 {
 
 /* Header */
 
+
 header {
   background: #040f16;
   border-bottom: 5px solid #de6b48;
@@ -39,6 +40,13 @@ header {
 
   display: grid;
   grid-template-columns: 250px 1fr;
+}
+
+@media(max-width: 767px){
+  header{
+    display: grid;
+    grid-template-columns: 20%;
+  }
 }
 
 header h1 {
@@ -71,13 +79,21 @@ nav a:hover {
   Images from Unsplash: https://unsplash.com/
 */
 
+@media (min-width: 768px) and (max-width: 1279px){
 .splash {
+display: none;
   background-image: url("./images/ales-nesetril-unsplash.jpg");
   background-position: 50% 50%;
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
 }
+}
 
+@media(max-width: 767px){
+  .splash{
+    display: none;
+  }
+}
 .splash h2 {
   color: #ececec;
   font-size: 5rem;
@@ -88,15 +104,36 @@ nav a:hover {
 
 /* Main */
 
-main {
-  margin: 3rem auto;
-
-  width: 70%;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 3rem;
+@media(max-width: 767px){
+  main{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 100%;
+  }
 }
+
+@media (min-width: 768px) and (max-width: 1279px){
+  main{
+    display: grid;
+    grid-template-columns: repeat(2, 20%);
+    width: 90%;
+  }
+}
+
+@media (min-width: 1280px) {
+
+
+  main {
+    margin: 3rem auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 3rem;
+  }
+  
+}
+
+
 
 /* Articles */
 
@@ -127,13 +164,32 @@ aside a:hover {
 
 /* Footer */
 
+@media (min-width: 1280px){
+  footer{
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    padding: 50px 101px 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px){
 footer {
   background: #040f16;
   color: #ececec;
   padding: 50px 15% 25px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media(max-width: 767px){
+  footer{
+    display: grid;
+    grid-template-columns: repeat(2, 15%);
+    padding: 25px;
+    text-align: center;
+  }
 }
 
 footer h4 {
@@ -143,10 +199,22 @@ footer h4 {
   padding-bottom: 5px;
 }
 
+@media(max-width:767px){
+  footer h4{
+    border: none;
+  }
+}
+
 footer ul {
   color: #de6b48;
   list-style: square;
   padding-left: 1rem;
+}
+
+@media(max-width: 767px){
+  footer ul{
+    list-style: none;
+  }
 }
 
 footer ul li {
