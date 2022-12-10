@@ -1,4 +1,4 @@
-# Media Queries Lab
+   # Media Queries Lab
 
 TekNews has a great looking website but it was only built for the desktop! Update the website so it can look good on any device.
 
