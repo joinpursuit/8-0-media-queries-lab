@@ -20,7 +20,11 @@ describe("Styling", () => {
     });
 
     it("should have the `main` element set to be 70% width", () => {
-      cy.get("main").should("have.css", "width", "885.5px");
+      cy.get("body").then(($body) => {
+        cy.get("main").then(($main) => {
+          expect($main.width()).to.be.closeTo($body.width() * .7, 1)
+        })
+      })
     });
 
     it("should have the `main` element be a grid element with two columns", () => {
@@ -99,7 +103,11 @@ describe("Styling", () => {
     });
 
     it("should have the `main` element set to be 90% width", () => {
-      cy.get("main").should("have.css", "width", "677.6875px");
+      cy.get("body").then(($body) => {
+        cy.get("main").then(($main) => {
+          expect($main.width()).to.be.closeTo($body.width() * .9, 1)
+        })
+      })
     });
 
     it("should have the `main` element be a grid element with two columns", () => {
@@ -178,7 +186,11 @@ describe("Styling", () => {
     });
 
     it("should have the `main` element set to be 90% width", () => {
-      cy.get("main").should("have.css", "width", "324px");
+      cy.get("body").then(($body) => {
+        cy.get("main").then(($main) => {
+          expect($main.width()).to.be.closeTo($body.width() * .9, 1)
+        })
+      })
     });
 
     it("should have the `main` element be a grid element with one columns", () => {
