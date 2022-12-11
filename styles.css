@@ -163,3 +163,10 @@ footer a:hover {
 }
 
 /* Media queries */
+@media (max-width: 1279)
+.splash 
+- [ ] Hide the `.splash` section by changing the `display` property to `none`.
+- [ ] Set the width of the `main` element to be `90%`.
+- [ ] Update the `footer` element so that instead of three columns it is set to have two.
+
+@media (max-width: 767)
