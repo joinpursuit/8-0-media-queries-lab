@@ -181,7 +181,7 @@ footer a:hover {
 
   footer {
     grid-template-columns: repeat(2, 1fr);
-    padding: 50px 102px 25 102px;
+    padding: 50px 102px 25px 102px;
     text-align: start;
   }
 
