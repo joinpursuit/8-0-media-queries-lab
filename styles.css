@@ -171,15 +171,15 @@ footer a:hover {
 
   }
   .splash {
-    display: none;
+     display: none;
   }
   footer {
     display : grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 50px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    padding-right:50px;
+    padding-left: 150px;
+    padding-bottom: 25px;
+    padding-right:150px;
   }
   header{
     display: grid; 
