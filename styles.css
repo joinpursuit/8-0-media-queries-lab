@@ -167,9 +167,14 @@ footer a:hover {
   header {
     display: grid;
     grid-template-columns: 200px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 200px;
     row-gap: 50px;
     column-gap: 0;
     width: 677.6875px;
+
   }
   footer {
     display: grid;
@@ -191,6 +196,7 @@ footer a:hover {
   }
   main {
     width: 677.6875px;
+   
   }
   footer {
     grid-template-columns: 1fr 1fr;
