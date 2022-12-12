@@ -80,11 +80,12 @@ nav a:hover {
 }
 
 .splash h2 {
-  color: #ececec;
+  color:yellowgreen;
   font-size: 5rem;
   margin: 0;
   padding: 20vh 0;
   text-align: center;
+  text-shadow: #d10833 1px 0 10px;;
 }
 
 /* Main */
@@ -111,7 +112,7 @@ article img {
   object-fit: cover;
   object-position: 50% 50%;
   width: 100%;
-  animation: rotate 25s ease-in;
+  animation: rotate 30s ease-in-out;
 }
 
 @keyframes rotate{
