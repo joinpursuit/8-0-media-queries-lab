@@ -111,11 +111,25 @@ article img {
   object-fit: cover;
   object-position: 50% 50%;
   width: 100%;
+  animation: rotate 2s ease-in;
+}
+
+@keyframes rotate{
+  0% {
+    transform: rotate(0);
+  }
+  50% { 
+    transform: rotate(360deg);
+  }
+  /* 100%{
+    transform: rotTE(180deg);
+  } */
 }
 
 article h3, p {
   color:beige;
 }
+
 aside {
   padding-bottom: 10px;
 }
