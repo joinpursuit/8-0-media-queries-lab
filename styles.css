@@ -133,7 +133,7 @@ footer {
   padding: 50px 15% 25px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 footer h4 {
@@ -163,3 +163,115 @@ footer a:hover {
 }
 
 /* Media queries */
+/* @media (min-width: 1280px) {
+  .name {
+    viewport-fit: macbook-13;;
+    
+  }
+} */
+
+@media (min-width: 1280px) {
+  .splash {
+    visibility: visible;
+}
+
+}
+
+@media (min-width: 1280px) {
+  main {
+    width: 70%;
+  }
+}
+@media (min-width: 1280px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1);
+
+  }
+}
+
+
+@media (min-width: 1280px) {
+  footer {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  main {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2);
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2);
+
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    display: grid;
+    grid-template-columns: auto;
+
+  }
+}
+
+@media (max-width: 767px) {
+  .splash {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  footer {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  footer h4 {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 767px) {
+  footer ul {
+    list-style: none;
+  }
+}
+
+
+
