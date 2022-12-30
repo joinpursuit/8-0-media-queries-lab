@@ -76,6 +76,7 @@ nav a:hover {
   background-position: 50% 50%;
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
+  /* display: none; */
 }
 
 .splash h2 {
@@ -84,6 +85,7 @@ nav a:hover {
   margin: 0;
   padding: 20vh 0;
   text-align: center;
+  /* display: block; */
 }
 
 /* Main */
@@ -163,3 +165,60 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media(min-width: 1280px){
+  main{
+    width: 885.5px;
+  }
+
+  header {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section.splash{
+    display: visible;
+  }
+}
+
+@media(max-width: 1279px){
+  section.splash{
+    display: none;
+  }
+
+  main{
+    width: 677.6875px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 150px;
+    /* text-align: center; */
+  }
+}
+
+@media(max-width: 767px){
+  header{
+    grid-template-columns: 1fr;
+  }
+
+  main{
+    width: 324px;
+    grid-template-columns: 1fr;
+  }
+
+  footer{
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+  }
+
+  footer h4{
+    border-bottom: 0;
+  }
+
+  footer ul{
+    list-style: none;
+  }
+}
