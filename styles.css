@@ -163,3 +163,40 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media (max-width: 1279px) {
+  .splash {
+    display: none
+  }
+  main {
+    width: 90%
+  }
+  footer {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  main {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+  footer ul {
+    list-style: none;
+  }
+  footer h1,
+  footer h2,
+  footer h3,
+  footer h4,
+  footer h5,
+  footer h6 {
+    border-bottom: none;
+  }
+}
