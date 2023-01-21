@@ -163,3 +163,63 @@ footer a:hover {
 }
 
 /* Media queries */
+/* Main */
+@media (min-width: 1280px){
+  #main{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+.splash{
+  display: none;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-bottom: 25px;
+  padding-right: 150px;
+}
+
+header{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 767px) {
+  header{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .splash {
+    display: none;
+  }
+  
+  .main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+  }
+
+  footer ul{
+    list-style-type: outside none none;
+  }
+
+  footer h4{
+    border: none;
+  }
+
+}
